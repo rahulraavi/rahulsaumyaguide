@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stay, Reach & Wedding Program | Rahul & Saumya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Tangerine:wght@700&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#fbf6ee;--ivory:#fffaf4;--gold:#c79a4a;--gold-dark:#8f6426;--maroon:#7b2230;--maroon-deep:#5f1722;--text:#352217;--muted:#6b5747;--line:rgba(199,154,74,.20);--shadow:0 16px 38px rgba(87,52,25,.11);--green:#1f6a4f;--green-light:#2c8a66}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Poppins',sans-serif;color:var(--text);background:radial-gradient(circle at 20% 0%, rgba(199,154,74,.08), transparent 32%),radial-gradient(circle at 100% 30%, rgba(123,34,48,.06), transparent 30%),linear-gradient(180deg,#f6ecdd 0%, var(--cream) 26%, #fffaf5 100%);overflow-x:hidden}
+    .container{max-width:820px;margin:0 auto;padding:14px 12px 96px}
+    .hero,.section{background:rgba(255,250,244,.97);border:1px solid var(--line);box-shadow:var(--shadow)}
+    .hero{position:relative;border-radius:24px;padding:18px 16px 14px;overflow:hidden;background:linear-gradient(135deg, rgba(255,252,247,.99), rgba(255,245,230,.97))}
+    .hero:before,.hero:after{content:"✦";position:absolute;top:14px;font-size:20px;color:rgba(199,154,74,.55)}
+    .hero:before{left:16px}.hero:after{right:16px}
+    .ganesh{text-align:center;margin-bottom:10px}.om{font-family:'Noto Sans Devanagari',sans-serif;color:var(--gold-dark);font-size:2.1rem;line-height:1}.ganesh-text{margin-top:4px;font-family:'Noto Sans Devanagari',sans-serif;color:var(--maroon);font-weight:700;font-size:1rem}
+    .couple{text-align:center;font-family:'Tangerine',cursive;color:var(--maroon);font-size:2.55rem;line-height:1;margin-top:2px}
+    h1{margin:8px 0 8px;text-align:center;font-family:'Cinzel',serif;font-size:clamp(1.55rem,4vw,2.4rem);line-height:1.2;color:#3a2517}
+    .hero-sub{text-align:center;color:var(--muted);font-size:.88rem;line-height:1.5;max-width:620px;margin:0 auto}
+    .section{margin-top:14px;border-radius:20px;padding:14px 13px;position:relative;overflow:hidden}
+    .section-title{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-family:'Cinzel',serif;font-size:1.08rem;color:#3a2517;justify-content:center;text-align:center;position:relative}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(199,154,74,.11);color:var(--gold-dark);font-weight:800;font-size:.68rem;letter-spacing:.04em;margin-bottom:8px}
+    .highlight{background:linear-gradient(135deg, rgba(255,255,255,.82), rgba(255,248,239,.76));border:1px solid rgba(199,154,74,.18);border-radius:16px;padding:12px}
+    .hotel-name{font-size:1.08rem;font-weight:800;color:var(--maroon);line-height:1.3;margin:2px 0 5px}
+    .muted{color:var(--muted);line-height:1.55;font-size:.87rem;margin:0}
+    .btn-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+    .btn{text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 11px;border-radius:12px;font-weight:800;font-size:.82rem;border:1px solid transparent;min-height:42px;text-align:center}
+    .btn-primary{background:linear-gradient(135deg,var(--maroon),var(--maroon-deep));color:#fff;box-shadow:0 8px 18px rgba(95,23,34,.16)}
+    .btn-green{background:linear-gradient(135deg,var(--green-light),var(--green));color:#fff;box-shadow:0 8px 18px rgba(31,106,79,.18)}
+    .tip{margin-top:10px;background:rgba(123,34,48,.05);border:1px solid rgba(123,34,48,.08);color:#5f3c2d;border-radius:12px;padding:10px 11px;font-size:.84rem;line-height:1.5}
+    .timeline{display:flex;flex-direction:column;gap:10px}
+    .event{border:1px solid rgba(199,154,74,.18);border-radius:16px;background:linear-gradient(135deg, rgba(255,255,255,.84), rgba(255,248,239,.78));padding:12px;box-shadow:0 6px 16px rgba(123,34,48,.04)}
+    .event-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:5px}
+    .event-name{font-size:.96rem;font-weight:800;color:#3b2517}.event-time{font-size:.74rem;font-weight:800;color:var(--gold-dark);background:rgba(199,154,74,.1);padding:5px 9px;border-radius:999px}
+    .event p{margin:4px 0;font-size:.84rem;line-height:1.5;color:var(--muted)} .label{color:var(--text);font-weight:700}
+    .venue-link{display:inline-flex;align-items:center;gap:6px;margin-top:6px;padding:7px 10px;border-radius:999px;text-decoration:none;font-size:.72rem;font-weight:800;background:rgba(199,154,74,.10);color:var(--maroon);border:1px solid rgba(199,154,74,.18)}
+    .contact-name{font-size:1.18rem;font-weight:800;color:var(--maroon);margin:2px 0}
+    .photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+    @media (max-width:640px){.photo-grid{grid-template-columns:1fr}}
+    .footer-note{margin-top:12px;text-align:center;color:var(--maroon);font-weight:700;font-size:.88rem}.end-note{text-align:center;font-size:.84rem;color:var(--muted);line-height:1.5;margin-top:8px}.section:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg, transparent, rgba(199,154,74,.7), transparent)}
+    .sticky-actions{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;z-index:9999;display:flex;gap:7px;background:rgba(255,248,239,.9);backdrop-filter:blur(10px);border:1px solid rgba(199,154,74,.14);border-radius:999px;padding:7px 9px;box-shadow:0 10px 24px rgba(87,52,25,.12);transition:transform .28s ease, opacity .28s ease}
+    .sticky-actions.hidden{transform:translateX(-50%) translateY(120%);opacity:0;pointer-events:none}
+    .icon-btn{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1rem;font-weight:800;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+    .call{background:linear-gradient(135deg,#22c55e,#15803d)} .top{background:linear-gradient(135deg,var(--gold),var(--gold-dark))}
+    .wa{background:#25D366;position:relative;font-size:0}.wa:before{content:"";width:22px;height:22px;display:block;background-repeat:no-repeat;background-position:center;background-size:contain;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='white' d='M19.11 17.34c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.15-.19.29-.74.93-.91 1.12-.17.19-.34.22-.63.08-.29-.15-1.24-.46-2.36-1.47-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.49.1-.19.05-.37-.02-.51-.08-.15-.64-1.55-.88-2.12-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.49.07-.74.34-.26.29-.98.96-.98 2.33s1 2.7 1.14 2.89c.15.19 1.97 3.01 4.77 4.22.67.29 1.2.47 1.61.6.68.22 1.3.19 1.79.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34Z'/><path fill='white' d='M16.02 3.2c-6.97 0-12.62 5.66-12.62 12.63 0 2.21.57 4.36 1.66 6.26L3.2 28.8l6.9-1.81a12.57 12.57 0 0 0 5.92 1.5h.01c6.97 0 12.63-5.66 12.63-12.63S22.99 3.2 16.02 3.2Zm0 22.96h-.01a10.4 10.4 0 0 1-5.31-1.46l-.38-.23-4.1 1.08 1.1-4-.25-.41a10.34 10.34 0 0 1-1.59-5.5c0-5.74 4.67-10.41 10.42-10.41 2.79 0 5.41 1.08 7.38 3.05a10.35 10.35 0 0 1 3.04 7.37c0 5.75-4.67 10.42-10.4 10.42Z'/></svg>")}
+    .scroll-progress{position:fixed;right:8px;top:50%;transform:translateY(-50%);width:4px;height:110px;border-radius:999px;background:rgba(199,154,74,.10);z-index:9998;overflow:hidden;opacity:.7}.scroll-progress-fill{width:100%;height:0%;background:linear-gradient(180deg,var(--gold),var(--gold-dark));border-radius:999px;transition:height .12s linear}
+    @media (max-width:640px){.container{padding:12px 10px 92px}.hero{padding:16px 13px 13px}.section{padding:12px}.btn-row{grid-template-columns:1fr}.couple{font-size:2.3rem}.icon-btn{width:38px;height:38px}.section-title{font-size:1rem}}
+  </style>
+</head>
+<body id="top">
+  <div class="scroll-progress"><div class="scroll-progress-fill" id="scrollProgressFill"></div></div>
+  <div class="container">
+    <section class="hero">
+      <div class="ganesh"><div class="om">ॐ</div><div class="ganesh-text">॥ श्री गणेशाय नमः ॥</div></div>
+      <div class="couple">Rahul &amp; Saumya</div>
+      <h1>📍 Aapke Stay, Reach &amp; Wedding Program ki Jaankari</h1>
+      <p class="hero-sub">Aapke stay, pahunchne ki suvidha aur poore wedding program ki zaroori details yahan ek jagah di gayi hain.</p>
+    </section>
+    <section class="section" id="stay">
+      <div class="badge">STAY DETAILS</div>
+      <h2 class="section-title">🏨 Sabse Pehle Yahin Pahunchna Hai</h2>
+      <div class="highlight">
+        <div class="hotel-name">Treebo Indus Crown Hotel, Sector 72, Noida</div>
+        <p class="muted">Aapka stay yahin arrange kiya gaya hai. Noida pahunchne ke baad kripya sabse pehle hotel hi aaiyega. Aapke rooms pehle se booked hain. Hotel pahunchkar front desk se room keys collect kar lijiye.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/SjK6i6bugzQz1w1u8" target="_blank">📍 Yeh Aapka Stay Location Hai</a>
+          <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&query=Treebo+Indus+Crown+Hotel,+Sector+72,+Noida" target="_blank">🚕 Cab Se Yahan Pahunchiye</a>
+        </div>
+        <div class="tip"><strong>Vinamra Nivedan:</strong> Kripya Noida pahunchne ka samay pehle se share kar dijiye.</div>
+      </div>
+    </section>
+    <section class="section" id="program">
+      <div class="badge">WEDDING PROGRAM</div>
+      <h2 class="section-title">💛 Poora Program Ek Nazar Mein</h2>
+      <div class="timeline">
+        <div class="event"><div class="event-head"><div class="event-name">💍 Ring Ceremony &amp; Sangeet</div><div class="event-time">28 April • 6:00 PM</div></div><p><span class="label">Venue:</span> Prince Hall, Golden Dreams Banquet, Sector 51, Noida</p><a class="venue-link" href="https://maps.app.goo.gl/upjx7wfmgmxVRvA77" target="_blank">📍 Venue Location Dekhein</a><p><span class="label">Dress Suggestion:</span> Western ya Indian — jo aapko pasand ho, bas graceful aur festive look rakhiye. ✨</p></div>
+        <div class="event"><div class="event-head"><div class="event-name">💛 Haldi Phool n Pool Party</div><div class="event-time">29 April • 10:00 AM</div></div><p><span class="label">Venue:</span> Krishna Apra Residency, Sector 61, Noida</p><a class="venue-link" href="https://maps.app.goo.gl/LAq1KyJFkErUkDdJ6" target="_blank">📍 Venue Location Dekhein</a><p><span class="label">Dress Suggestion:</span> Kripya Yellow / Haldi shades mein aaiyega. 💛</p><p><span class="label">Chhota Sa Note:</span> Dhoop kaafi ho sakti hai, isliye sunglasses aur sunscreen saath rakh lijiye. 😎☀️</p></div>
+        <div class="event"><div class="event-head"><div class="event-name">🤚 Mehendi</div><div class="event-time">29 April • 6:00 PM</div></div><p><span class="label">Venue:</span> Treebo Indus Crown Hotel, Sector 72, Noida</p><a class="venue-link" href="https://maps.app.goo.gl/SjK6i6bugzQz1w1u8" target="_blank">📍 Venue Location Dekhein</a><p><span class="label">Dress Suggestion:</span> Green pehenenge toh aur bhi achha lagega, warna aap jo comfortable ho woh bilkul perfect hai. ✨</p></div>
+        <div class="event"><div class="event-head"><div class="event-name">🥁 Sehrabandhi &amp; Barat Prasthan</div><div class="event-time">30 April • 6:00 PM</div></div><p><span class="label">Venue:</span> Treebo Indus Crown Hotel, Sector 72, Noida</p><a class="venue-link" href="https://maps.app.goo.gl/SjK6i6bugzQz1w1u8" target="_blank">📍 Venue Location Dekhein</a></div>
+        <div class="event"><div class="event-head"><div class="event-name">👑 Wedding Ceremony</div><div class="event-time">30 April • 7:00 PM</div></div><p><span class="label">Venue:</span> Royal Hall, Diamond Crown Banquet, Sector 51, Noida</p><a class="venue-link" href="https://maps.app.goo.gl/bwLpofyxPWfhDP6Q7" target="_blank">📍 Venue Location Dekhein</a><p><span class="label">Dress Suggestion:</span> Apne sabse sundar festive look mein aaiyega. ✨</p></div>
+      </div>
+    </section>
+    <section class="section" id="photos">
+      <div class="badge">PHOTOS</div>
+      <h2 class="section-title">📸 Photos Yahan Add Kar Sakte Hain</h2>
+      <div class="highlight">
+        <p class="muted">Photos ya videos share karne ke liye neeche diye gaye links ka upyog kar sakte hain.</p>
+        <div class="photo-grid">
+          <a class="btn btn-primary" href="https://photos.app.goo.gl/yGFkSRM2L6tk6sWA8" target="_blank">📷 Google Photos</a>
+          <a class="btn btn-green" href="https://1drv.ms/f/c/7458198a49c6fcd1/IgAoxr9UpBeeSbD99-78mjszAf9gdyy8ueMT_WPvrreiWrE" target="_blank">☁️ OneDrive Album</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="help">
+      <div class="badge">SAHAYATA</div>
+      <h2 class="section-title">📞 Kisi Bhi Sahayata Ke Liye</h2>
+      <div class="highlight">
+        <div class="contact-name">Sonu • 9674385130</div>
+        <p class="muted">Pahunchne, stay ya kisi bhi sahayata ke liye kripya Sonu se sampark kar lijiye.</p>
+        <div class="btn-row">
+          <a class="btn btn-green" href="tel:+919674385130">📞 Call Karein</a>
+          <a class="btn btn-primary" href="https://wa.me/919674385130?text=Namaste%2C%20main%20wedding%20ke%20regarding%20sampark%20kar%20raha%2Frahi%20hoon." target="_blank">💬 WhatsApp Karein</a>
+        </div>
+      </div>
+      <div class="footer-note">Aapka aana hi hamare liye sabse badi khushi hai 💛</div>
+      <div class="end-note">Kripya is page ko save kar lijiye.</div>
+    </section>
+  </div>
+  <div class="sticky-actions">
+    <a class="icon-btn call" href="tel:+919674385130" title="Call Sonu">📞</a>
+    <a class="icon-btn wa" href="https://wa.me/919674385130?text=Namaste%2C%20main%20wedding%20ke%20regarding%20sampark%20kar%20raha%2Frahi%20hoon." target="_blank" title="WhatsApp Sonu"></a>
+    <a class="icon-btn top" href="#top" title="Back to top">⬆️</a>
+  </div>
+  <script>
+    const progressFill=document.getElementById('scrollProgressFill');
+    function updateScrollProgress(){const s=window.scrollY||document.documentElement.scrollTop;const d=document.documentElement.scrollHeight-window.innerHeight;const p=d>0?(s/d)*100:0;progressFill.style.height=Math.min(100,Math.max(0,p))+'%'}
+    window.addEventListener('scroll',updateScrollProgress,{passive:true});window.addEventListener('load',updateScrollProgress);updateScrollProgress();
+    const stickyBar=document.querySelector('.sticky-actions');let lastScrollY=window.scrollY,hideBarTimer;
+    function showStickyBar(){stickyBar.classList.remove('hidden')} function hideStickyBar(){stickyBar.classList.add('hidden')}
+    function handleStickyBar(){const y=window.scrollY||document.documentElement.scrollTop;const d=document.documentElement.scrollHeight-window.innerHeight;const nearBottom=y>(d-180);const nearTop=y<80;if(nearTop||nearBottom){showStickyBar()}else if(y>lastScrollY+8){hideStickyBar()}else if(y<lastScrollY-8){showStickyBar()} lastScrollY=y;clearTimeout(hideBarTimer);hideBarTimer=setTimeout(()=>{if(!nearTop&&!nearBottom)hideStickyBar()},1800)}
+    window.addEventListener('scroll',handleStickyBar,{passive:true});window.addEventListener('load',()=>{showStickyBar();setTimeout(()=>{if((window.scrollY||document.documentElement.scrollTop)>80)hideStickyBar()},1600)});
+  </script>
+</body>
+</html>
